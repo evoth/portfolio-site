@@ -10,7 +10,7 @@ The empty Bulma example HTML page.
 
 ## Updates since last commit
 
-- This is the first (real) commit.
+- This is the first commit.
 
 ## Todo
 
