@@ -1,7 +1,6 @@
 /* Gradient! */
-body {
+html {
   background: linear-gradient(to right,#07a, #0aa);
-  height: 100vh;
 }
 
 /* Link animations */
