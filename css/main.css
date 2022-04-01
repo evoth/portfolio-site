@@ -33,7 +33,7 @@ a:hover::before {
 }
 
 a.has-text-link-custom {
-  color: rgb(125, 229, 255);
+  color: rgb(152, 232, 252);
   transition: color 0.3s ease;
 }
 
