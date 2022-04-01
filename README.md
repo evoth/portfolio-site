@@ -10,7 +10,7 @@ A gradient and navbar.
 
 ## Updates since last commit
 
-- Created a nice-looking navbar and cleaned up some ohter things.
+- Created a nice-looking navbar and cleaned up some other things.
 
 ## Todo
 
