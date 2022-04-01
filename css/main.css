@@ -3,6 +3,11 @@ html {
   background: linear-gradient(to right,#07a, #0aa);
 }
 
+html,body
+{
+    overflow-x: hidden; 
+}
+
 /* Link animations */
 a {
   position: relative;
@@ -32,7 +37,7 @@ a:hover::before {
 }
 
 a.has-text-link-custom {
-  color: rgb(152, 232, 252);
+  color: rgb(188, 242, 255);
   transition: color 0.3s ease;
 }
 

@@ -124,7 +124,7 @@ pre {
   font-family: monospace; }
 
 body {
-  color: #b5b5b5;
+  color: #dbdbdb;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5; }
@@ -168,7 +168,7 @@ span {
   font-weight: inherit; }
 
 strong {
-  color: #dbdbdb;
+  color: #ededed;
   font-weight: 700; }
 
 fieldset {
@@ -177,7 +177,7 @@ fieldset {
 pre {
   -webkit-overflow-scrolling: touch;
   background-color: #242424;
-  color: #b5b5b5;
+  color: #dbdbdb;
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -197,7 +197,7 @@ table th {
     text-align: inherit; }
 
 table th {
-  color: #dbdbdb; }
+  color: #ededed; }
 
 @keyframes spinAround {
   from {
@@ -1641,7 +1641,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     vertical-align: middle; }
 
 .title {
-  color: #dbdbdb;
+  color: #ededed;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
@@ -1666,12 +1666,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 0.75rem; }
 
 .subtitle {
-  color: #b5b5b5;
+  color: #dbdbdb;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25; }
   .subtitle strong {
-    color: #dbdbdb;
+    color: #ededed;
     font-weight: 600; }
   .subtitle:not(.is-spaced) + .title {
     margin-top: -1.25rem; }
