@@ -6,11 +6,11 @@ A clean, simple way to present my resume and projects, past and future.
 
 ## Current State
 
-The empty Bulma example HTML page.
+A gradient and navbar.
 
 ## Updates since last commit
 
-- This is the first commit.
+- Created a nice-looking navbar and cleaned up some ohter things.
 
 ## Todo
 
