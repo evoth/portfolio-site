@@ -6,16 +6,18 @@ A clean, simple way to present my resume and projects, past and future.
 
 ## Current State
 
-A gradient and navbar.
+The design is getting along well; now I just need to add the content.
 
 ## Updates since last commit
 
-- Created a nice-looking navbar and cleaned up some other things.
+- Updated title section
+- Added Resume section
+   - Added Education section
+- Favicon!
 
 ## Todo
 
-- Create basic page using Bulma.
-- Add a section for my resume.
-   - Should include a link to download the PDF.
+- Complete the resume section.
 - Add a section for projects
    - Also, make some projects. I don't have many presentable projects yet, but this will be a good start.
+- Add footer / Contact section

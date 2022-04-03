@@ -3,57 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <title>Ethan Voth - Portfolio</title>
-    <!-- Bulma built from Sass -->
-    <link rel="stylesheet" type="text/css" href="css/bulma-style.css">
-    <!-- Custom CSS to fill in the gaps -->
+    <!-- Bulma CSS rendered from Sass -->
+    <link rel="stylesheet" type="text/css" href="css/bulma-custom.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Fontawesome -->
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <!-- Javascript -->
     <script src="https://kit.fontawesome.com/a00713ef8f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <!-- Begin Hero -->
-    <section class="hero is-medium">
+    <!-- Begin Title Hero -->
+    <section class="hero">
       <!-- Begin Nav -->
       <div class="hero-head">
-        <div class="columns mt-5 px-6 is-mobile is-vcentered is-multiline is-centered">
+        <div class="columns mt-5 mx-5 is-multiline is-mobile is-vcentered is-centered">
           <div class="column is-narrow">
-            <a title="Github" class="has-text-link-custom is-medium"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a title="Github" class="link-light is-medium">
+              <i class="fa-brands fa-github fa-lg"></i>
+            </a>
           </div>
           <div class="column is-narrow">
-            <a title="LinkedIn" class="has-text-link-custom is-medium"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a title="LinkedIn" class="link-light is-medium">
+              <i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
           </div>
           <div class="column is-narrow">
-            <a title="Email Me" class="has-text-link-custom is-medium"><i class="fa-solid fa-square-envelope fa-lg"></i></i></a>
+            <a title="Email Me" class="link-light is-medium">
+              <i class="fa-solid fa-square-envelope fa-lg"></i></i>
+            </a>
           </div>
           <div class="column is-narrow">
-            <a title="View Resume PDF" class="has-text-link-custom is-medium"><i class="fa-solid fa-file-lines fa-lg"></i></i></a>
+            <a title="View Resume PDF" class="link-light is-medium">
+              <i class="fa-solid fa-file-lines fa-lg"></i></i>
+            </a>
           </div>
           <div class="column is-hidden-mobile"></div>
           <div class="column is-narrow">
-            <a class="has-text-link-custom">Resume</a>
+            <a href="#Resume" class="link-light">Resume</a>
           </div>
           <div class="column is-narrow">
-            <a class="has-text-link-custom">Projects</a>
+            <a class="link-light">Projects</a>
           </div>
           <div class="column is-narrow">
-            <a class="has-text-link-custom">Contact Me</a>
+            <a class="link-light">Contact Me</a>
           </div>
         </div>
       </div>
       <!-- End Nav -->
       <!-- Begin Hero Body -->
-      <div class="hero-body">
+      <div class="hero-body my-4">
         <div class="columns is-centered">
-          <div class="column has-text-centered is-narrow hover-shadow">
+          <div class="column has-text-centered is-narrow text-hover-shadow">
             <div class="block mb-3">
-              <h1 class="title is-size-1">
+              <h1 class="title is-size-0 has-text-white">
                 Ethan Voth
               </h1>
             </div>
             <div class="block">
-              <h2 class="subtitle">
-                Computer Science major from Colorado studying at the <br class="is-hidden-mobile">
+              <h2 class="subtitle has-text-primary-light">
+                Hi, I'm a Computer Science major from Colorado studying at the <br class="is-hidden-mobile">
                 University of Central Florida seeking a Summer 2023 internship.
               </h2>
             </div>
@@ -61,6 +76,59 @@
         </div>
       </div>
       <!-- End Hero Body -->
+    </section>
+    <!-- End Title Hero -->
+    <!-- Begin Resume Hero -->
+    <section class="hero is-white is-skewed my-6 py-6">
+      <div id="Resume" class="hero-body">
+        <div class="container is-max-widescreen">
+          <!-- Begin Resume title -->
+          <div class="title is-size-1 has-text-centered">
+            Resume
+          </div>
+          <div class="columns is-mobile is-centered mb-6 pb-4">
+            <div class="column is-narrow">
+              <a href="Resume Placeholder.pdf" target="_blank" class="link-dark">View</a>
+            </div>
+            <div class="column is-narrow">
+              <a href="Resume Placeholder.pdf" download class="link-dark">Download</a>
+            </div>
+          </div>
+          <!-- End Resume title -->
+          <!-- Begin Education Section -->
+          <div class="columns is-vcentered">
+            <div class="column is-auto">
+              <p class="title">
+                Education
+              </p>
+              <div class="block">
+                Currently, I'm working towards my Bachelor's of Science in Computer Science at UCF as part of the 
+                Burnett Honors College. At UCF, I enjoy an excellent Computer Science program, the opportunity to attend
+                weekly programming team practices, and of course a beautiful campus!
+              </div>
+              <div class="block">
+                <p><strong>GPA:</strong> 4.0</p>
+                <p><strong>Anticipated Graduation:</strong> May 2025</p>
+                <p><strong>Related Coursework:</strong> Object Oriented Programming, Data Structures and Algorithms, 
+                  Intro to Discrete Structures, Statistics, Calculus I, Calculus II</p>
+              </div>
+            </div>
+            <div class="column is-0"></div>
+            <div class="column is-auto">
+                <figure class="image is-4by3">
+                  <img src="img/ucf.jpg" class="theme-image box-hover-shadow" alt="UCF">
+                </figure>
+            </div>
+          </div>
+          <!-- End Education Section -->
+        </div>
+      </div>
+    </section>
+    <!-- End Resume Hero -->
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <div class="hero-body">
+      </div>
     </section>
     <!-- End Hero -->
   </body>

@@ -5,11 +5,11 @@
 
 // Update Bulma's global variables
 $family-sans-serif: "Poppins", sans-serif;
-$size-1: 100px;
-$primary: rgb(84, 224, 255);
+$size-1: 60px;
+$primary: rgb(131, 232, 255);
 
-// Import all Bulma components
-@import "../../node/node_modules/bulma/sass/utilities/_all-custom.sass";
+// Import necessary Bulma components
+@import "../../node/node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node/node_modules/bulma/sass/base/_all.sass";
 @import "../../node/node_modules/bulma/sass/helpers/_all.sass";
 @import "../../node/node_modules/bulma/sass/elements/title.sass";
@@ -17,3 +17,5 @@ $primary: rgb(84, 224, 255);
 @import "../../node/node_modules/bulma/sass/layout/section.sass";
 @import "../../node/node_modules/bulma/sass/grid/columns.sass";
 @import "../../node/node_modules/bulma/sass/elements/container.sass";
+@import "../../node/node_modules/bulma/sass/elements/other.sass";
+@import "../../node/node_modules/bulma/sass/elements/content.sass";
