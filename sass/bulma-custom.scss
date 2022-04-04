@@ -19,3 +19,11 @@ $primary: rgb(131, 232, 255);
 @import "../../node/node_modules/bulma/sass/elements/container.sass";
 @import "../../node/node_modules/bulma/sass/elements/other.sass";
 @import "../../node/node_modules/bulma/sass/elements/content.sass";
+
+// Used to show rows in the correct order on mobile (reversed when in column view otherwise)
+@media only screen and (min-width: $tablet) {
+  .reverse-row-order {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

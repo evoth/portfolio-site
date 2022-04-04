@@ -1,10 +1,17 @@
-/* Gradient! */
+/* Smooth scrolling to anchor links */
 html {
-  background: linear-gradient(to right,#07a, #0aa);
+  scroll-behavior: smooth;
 }
+
+/* Fix for extra overflow on edges */
 html,body
 {
-    overflow-x: hidden; 
+  overflow-x: hidden; 
+}
+
+/* Gradient! */
+.background-gradient {
+  background: linear-gradient(to right,#07a, #0aa);
 }
 
 /* Huge title text */
@@ -13,15 +20,15 @@ html,body
 }
 
 /* Link animations */
-a.link-light {
+.link-light {
   position: relative;
   color: #000;
   text-decoration: none;
 }
-a.link-light:hover {
+.link-light:hover {
   color: #000;
 }
-a.link-light::before {
+.link-light::before {
   content: "";
   position: absolute;
   display: block;
@@ -33,26 +40,26 @@ a.link-light::before {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-a.link-light:hover::before {
+.link-light:hover::before {
   transform: scaleX(1);
 }
-a.link-light {
+.link-light {
   color: rgb(188, 242, 255);
   transition: color 0.3s ease;
 }
-a.link-light:hover {
+.link-light:hover {
   color: rgb(255, 255, 255);
 }
 
-a.link-dark {
+.link-dark {
   position: relative;
   color: #000;
   text-decoration: none;
 }
-a.link-dark:hover {
+.link-dark:hover {
   color: #000;
 }
-a.link-dark::before {
+.link-dark::before {
   content: "";
   position: absolute;
   display: block;
@@ -64,14 +71,14 @@ a.link-dark::before {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-a.link-dark:hover::before {
+.link-dark:hover::before {
   transform: scaleX(1);
 }
-a.link-dark {
+.link-dark {
   color: rgb(101, 101, 101);
   transition: color 0.3s ease;
 }
-a.link-dark:hover {
+.link-dark:hover {
   color: rgb(0, 0, 0);
 }
 
@@ -105,4 +112,25 @@ a.link-dark:hover {
 .theme-image {
   border-radius: 20px;
   overflow: hidden;
+}
+
+/* Crops image to the height of its parent (with help of Sass to disable for mobile) */
+.tall-image {
+  object-fit: cover;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Knockout text */
+.knockout {
+  color: black;
+  mix-blend-mode: screen;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Enables text overflow with outline */
+.skill-text {
+  position: absolute;
+  text-shadow: -1px 1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255),
+	  1px -1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
 }

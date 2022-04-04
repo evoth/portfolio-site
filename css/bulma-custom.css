@@ -3591,3 +3591,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .content.is-large {
   font-size: 1.5rem; }
+
+@media only screen and (min-width: 769px) {
+  .reverse-row-order {
+    display: flex;
+    flex-direction: row-reverse; } }

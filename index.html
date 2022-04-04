@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="background-gradient">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,28 +25,28 @@
       <div class="hero-head">
         <div class="columns mt-5 mx-5 is-multiline is-mobile is-vcentered is-centered">
           <div class="column is-narrow">
-            <a title="Github" class="link-light is-medium">
+            <a title="My Github" class="link-light is-medium">
               <i class="fa-brands fa-github fa-lg"></i>
             </a>
           </div>
           <div class="column is-narrow">
-            <a title="LinkedIn" class="link-light is-medium">
+            <a title="My LinkedIn" class="link-light is-medium">
               <i class="fa-brands fa-linkedin fa-lg"></i>
             </a>
           </div>
           <div class="column is-narrow">
             <a title="Email Me" class="link-light is-medium">
-              <i class="fa-solid fa-square-envelope fa-lg"></i></i>
+              <i class="fa-solid fa-square-envelope fa-lg"></i>
             </a>
           </div>
           <div class="column is-narrow">
-            <a title="View Resume PDF" class="link-light is-medium">
-              <i class="fa-solid fa-file-lines fa-lg"></i></i>
+            <a href="Resume%20Placeholder.pdf" target="_blank" title="View Resume PDF" class="link-light is-medium">
+              <i class="fa-solid fa-file-lines fa-lg"></i>
             </a>
           </div>
           <div class="column is-hidden-mobile"></div>
           <div class="column is-narrow">
-            <a href="#Resume" class="link-light">Resume</a>
+            <a href="#resume" class="link-light">Resume</a>
           </div>
           <div class="column is-narrow">
             <a class="link-light">Projects</a>
@@ -62,9 +62,9 @@
         <div class="columns is-centered">
           <div class="column has-text-centered is-narrow text-hover-shadow">
             <div class="block mb-3">
-              <h1 class="title is-size-0 has-text-white">
+              <h2 class="title block mb-3 is-size-0 has-text-white">
                 Ethan Voth
-              </h1>
+              </h2>
             </div>
             <div class="block">
               <h2 class="subtitle has-text-primary-light">
@@ -80,27 +80,27 @@
     <!-- End Title Hero -->
     <!-- Begin Resume Hero -->
     <section class="hero is-white is-skewed my-6 py-6">
-      <div id="Resume" class="hero-body">
+      <div id="resume" class="hero-body">
         <div class="container is-max-widescreen">
           <!-- Begin Resume title -->
-          <div class="title is-size-1 has-text-centered">
+          <h2 class="title is-size-1 has-text-centered">
             Resume
-          </div>
+          </h2>
           <div class="columns is-mobile is-centered mb-6 pb-4">
             <div class="column is-narrow">
-              <a href="Resume Placeholder.pdf" target="_blank" class="link-dark">View</a>
+              <a href="Resume%20Placeholder.pdf" target="_blank" class="link-dark">View</a>
             </div>
             <div class="column is-narrow">
-              <a href="Resume Placeholder.pdf" download class="link-dark">Download</a>
+              <a href="Resume%20Placeholder.pdf" download class="link-dark">Download</a>
             </div>
           </div>
           <!-- End Resume title -->
           <!-- Begin Education Section -->
           <div class="columns is-vcentered">
             <div class="column is-auto">
-              <p class="title">
+              <h3 class="title">
                 Education
-              </p>
+              </h3>
               <div class="block">
                 Currently, I'm working towards my Bachelor's of Science in Computer Science at UCF as part of the 
                 Burnett Honors College. At UCF, I enjoy an excellent Computer Science program, the opportunity to attend
@@ -114,13 +114,95 @@
               </div>
             </div>
             <div class="column is-0"></div>
-            <div class="column is-auto">
-                <figure class="image is-4by3">
-                  <img src="img/ucf.jpg" class="theme-image box-hover-shadow" alt="UCF">
-                </figure>
+            <div class="column is-auto is-align-content-space-around is-flex is-align-self-stretch">
+              <img src="img/ucf.jpg" class="theme-image tall-image box-hover-shadow" alt="Sunrise over UCF">
             </div>
           </div>
           <!-- End Education Section -->
+          <!-- Begin Skills Section -->
+          <div class="columns is-vcentered reverse-row-order mt-6">
+            <div class="column is-auto">
+              <h3 class="title">
+                Skills
+              </h3>
+              <div class="block">
+                I've always enjoyed teaching myself new skills that enable me to create projects that challenge me in
+                new ways. Recently, my language of choice for programming projects has been Python, but I've also been
+                learning some other common languages. Additionally, I've dabbled in Dart (Flutter) and have started
+                using Git/Github to organize my projects.
+              </div>
+              <div class="block">
+                <p><strong>Programming Languages:</strong> Python, C++, C, Java</p>
+                <p><strong>Technologies & Frameworks:</strong> Git/Github, Flutter, HTML/CSS</p>
+              </div>
+            </div>
+            <div class="column is-0"></div>
+            <!-- Begin Skills Chart -->
+            <div class="column is-auto background-gradient theme-image box-hover-shadow p-6 m-3 is-flex is-flex-direction-column is-align-self-stretch is-justify-content-space-between" style="min-height:370px">
+              <div class="columns is-mobile">
+                <div class="column is-auto">
+                  <div class="columns is-mobile">
+                    <div class="column is-12 has-background-white knockout">
+                      <strong class="skill-text">Python</strong><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-narrow has-text-white">
+                  3 years
+                </div>
+              </div>
+              <div class="columns is-mobile">
+                <div class="column is-auto">
+                  <div class="columns is-mobile">
+                    <div class="column is-10 has-background-white knockout">
+                      <strong class="skill-text">C</strong><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-narrow has-text-white">
+                  3 years
+                </div>
+              </div>
+              <div class="columns is-mobile">
+                <div class="column is-auto">
+                  <div class="columns is-mobile">
+                    <div class="column is-7 has-background-white knockout">
+                      <strong class="skill-text">C++</strong><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-narrow has-text-white">
+                  2 years
+                </div>
+              </div>
+              <div class="columns is-mobile">
+                <div class="column is-auto">
+                  <div class="columns is-mobile">
+                    <div class="column is-5 has-background-white knockout">
+                      <strong class="skill-text">Java</strong><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-narrow has-text-white">
+                  1 year
+                </div>
+              </div>
+              <div class="columns is-mobile">
+                <div class="column is-auto">
+                  <div class="columns is-mobile">
+                    <div class="column is-4 has-background-white knockout">
+                      <strong class="skill-text">HTML & CSS</strong><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-narrow has-text-white">
+                  6 mo.
+                </div>
+              </div>
+            </div>
+            <!-- End Skills Chart -->
+          </div>
+          <!-- End Skills Section -->
         </div>
       </div>
     </section>
