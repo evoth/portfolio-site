@@ -4,14 +4,16 @@ html {
 }
 
 /* Fix for extra overflow on edges */
-html,body
-{
-  overflow-x: hidden; 
+/*
+html,
+body {
+  overflow-x: hidden;
 }
+*/
 
 /* Gradient! */
 .background-gradient {
-  background: linear-gradient(to right,#07a, #0aa);
+  background: linear-gradient(to right, #07a, #0aa);
 }
 
 /* Huge title text */
@@ -25,9 +27,11 @@ html,body
   color: #000;
   text-decoration: none;
 }
+
 .link-light:hover {
   color: #000;
 }
+
 .link-light::before {
   content: "";
   position: absolute;
@@ -40,13 +44,16 @@ html,body
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+
 .link-light:hover::before {
   transform: scaleX(1);
 }
+
 .link-light {
   color: rgb(188, 242, 255);
   transition: color 0.3s ease;
 }
+
 .link-light:hover {
   color: rgb(255, 255, 255);
 }
@@ -56,9 +63,11 @@ html,body
   color: #000;
   text-decoration: none;
 }
+
 .link-dark:hover {
   color: #000;
 }
+
 .link-dark::before {
   content: "";
   position: absolute;
@@ -71,13 +80,16 @@ html,body
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+
 .link-dark:hover::before {
   transform: scaleX(1);
 }
+
 .link-dark {
   color: rgb(101, 101, 101);
   transition: color 0.3s ease;
 }
+
 .link-dark:hover {
   color: rgb(0, 0, 0);
 }
@@ -86,8 +98,9 @@ html,body
 .text-hover-shadow {
   transition: text-shadow .5s ease, transform .5s ease;
 }
+
 .text-hover-shadow:hover {
-  text-shadow: 4px 4px 7px rgba(0,0,0,.5);
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, .5);
   transform: translate(-4px, -4px);
 }
 
@@ -95,8 +108,9 @@ html,body
 .box-hover-shadow {
   transition: box-shadow .5s ease, transform .5s ease;
 }
+
 .box-hover-shadow:hover {
-  box-shadow: 4px 4px 7px rgba(0,0,0,.5);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, .5);
   transform: translate(-4px, -4px);
 }
 
@@ -104,7 +118,8 @@ html,body
 .is-skewed {
   transform: skewY(-4deg);
 }
-.is-skewed > * {
+
+.is-skewed>* {
   transform: skewY(4deg);
 }
 
@@ -132,5 +147,5 @@ html,body
 .skill-text {
   position: absolute;
   text-shadow: -1px 1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255),
-	  1px -1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+    1px -1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
 }
