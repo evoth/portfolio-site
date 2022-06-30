@@ -3,14 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Fix for extra overflow on edges */
-/*
-html,
-body {
-  overflow-x: hidden;
-}
-*/
-
 /* Gradient! */
 .background-gradient {
   background: linear-gradient(to right, #07a, #0aa);
