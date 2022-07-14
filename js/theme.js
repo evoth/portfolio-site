@@ -23,6 +23,11 @@ function toggleTheme() {
     return false;
 }
 
+// Toggles theme when the button is pressed
+$(document).on("click", "#theme-button", function () {
+    toggleTheme();
+});
+
 // Sets the theme and theme cookie to the given theme
 function setTheme(themeName, doTransition = true) {
     // Fades the entire page out, switches the css, and fades back in
