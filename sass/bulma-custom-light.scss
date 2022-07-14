@@ -1,12 +1,20 @@
 @charset "utf-8";
 
 // Import the Poppins font from Google
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 // Update Bulma's global variables
 $family-sans-serif: "Poppins", sans-serif;
 $size-1: 60px;
 $primary: rgb(131, 232, 255);
+$white-hero: white;
+$white-hero-invert: findColorInvert($white-hero);
+$black-hero: black;
+$black-hero-invert: findColorInvert($black-hero);
+$custom-colors: (
+  "white-hero": ($white-hero, $white-hero-invert),
+  "black-hero": ($black-hero, $black-hero-invert),
+);
 
 // Import necessary Bulma components
 @import "../../node/node_modules/bulma/sass/utilities/_all.sass";
