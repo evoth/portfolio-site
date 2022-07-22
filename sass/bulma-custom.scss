@@ -7,14 +7,6 @@
 $family-sans-serif: "Poppins", sans-serif;
 $size-1: 60px;
 $primary: rgb(131, 232, 255);
-$white-hero: white;
-$white-hero-invert: findColorInvert($white-hero);
-$black-hero: black;
-$black-hero-invert: findColorInvert($black-hero);
-$custom-colors: (
-  "white-hero": ($white-hero, $white-hero-invert),
-  "black-hero": ($black-hero, $black-hero-invert),
-);
 
 // Import necessary Bulma components
 @import "../../node/node_modules/bulma/sass/utilities/_all.sass";
@@ -30,8 +22,8 @@ $custom-colors: (
 
 // Used to show rows in the correct order on mobile (reversed when in column view otherwise)
 @media only screen and (min-width: $tablet) {
-  .reverse-row-order {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+    .reverse-row-order {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }

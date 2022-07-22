@@ -1,0 +1,11 @@
+$text-strong: white;
+$white-themed: rgb(31, 31, 31);
+$white-themed-invert: findColorInvert($white-themed);
+$black-themed: white;
+$black-themed-invert: findColorInvert($black-themed);
+$link-dark-color: rgb(168, 168, 168);
+$link-dark-hover-color: rgb(255, 255, 255);
+$custom-colors: (
+    "white-themed": ($white-themed, $white-themed-invert),
+    "black-themed": ($black-themed, $black-themed-invert),
+);

@@ -1,0 +1,143 @@
+/* Smooth scrolling to anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gradient! */
+.background-gradient {
+    background: linear-gradient(to right, #07a, #0aa);
+}
+
+/* Link animations */
+.link-light {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.link-light:hover {
+    color: #000;
+}
+
+.link-light::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.link-light:hover::before {
+    transform: scaleX(1);
+}
+
+.link-light {
+    color: rgb(188, 242, 255);
+    transition: color 0.3s ease;
+}
+
+.link-light:hover {
+    color: rgb(255, 255, 255);
+}
+
+.link-dark {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.link-dark:hover {
+    color: #000;
+}
+
+.link-dark::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    bottom: 0;
+    left: 0;
+    background-color: $black-themed;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.link-dark:hover::before {
+    transform: scaleX(1);
+}
+
+.link-dark {
+    color: $link-dark-color;
+    transition: color 0.3s ease;
+}
+
+.link-dark:hover {
+    color: $link-dark-hover-color;
+}
+
+/* Huge title text */
+.title.is-size-0 {
+    font-size: 100px;
+}
+
+/* Subtle text shadow on mouse hover */
+.text-hover-shadow {
+    transition: text-shadow .5s ease, transform .5s ease;
+}
+
+.text-hover-shadow:hover {
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, .5);
+    transform: translate(-4px, -4px);
+}
+
+/* Subtle box shadow on mouse hover */
+.box-hover-shadow {
+    transition: box-shadow .5s ease, transform .5s ease;
+}
+
+.box-hover-shadow:hover {
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, .5);
+    transform: translate(-4px, -4px);
+}
+
+/* Skewed (applies skew then reverses for children) */
+.is-skewed {
+    transform: skewY(-4deg);
+}
+
+.is-skewed>* {
+    transform: skewY(4deg);
+}
+
+/* Image color and border effects */
+.theme-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Crops image to the height of its parent (with help of Sass to disable for mobile) */
+.tall-image {
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* Knockout text */
+.knockout {
+    color: black;
+    mix-blend-mode: screen;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Enables text overflow with outline */
+.skill-text {
+    position: absolute;
+    text-shadow: -1px 1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+}
