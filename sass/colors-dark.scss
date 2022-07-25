@@ -5,6 +5,10 @@ $black-themed: white;
 $black-themed-invert: findColorInvert($black-themed);
 $link-dark-color: rgb(168, 168, 168);
 $link-dark-hover-color: rgb(255, 255, 255);
+$link: rgb(121, 150, 253);
+$link-hover: lighten($link, 20%);
+$border-light: lighten($white-themed, 10%);
+$subtitle-color: darken($black-themed, 40%);
 $custom-colors: (
     "white-themed": ($white-themed, $white-themed-invert),
     "black-themed": ($black-themed, $black-themed-invert),

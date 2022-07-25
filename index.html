@@ -24,15 +24,15 @@
 <body id="body">
     <!-- Header (loaded with jQuery) -->
     <div id="header"></div>
-    <!-- Begin Resume Hero -->
-    <section class="hero is-white-themed has-text-black-themed is-skewed my-6 py-6">
-        <div id="resume" class="hero-body">
+    <!-- Begin Resume section -->
+    <section id="resume" class="hero is-white-themed has-text-black-themed is-skewed py-6">
+        <div class="hero-body">
             <div class="container is-max-widescreen">
                 <!-- Begin Resume title -->
                 <h2 class="title is-size-1 has-text-centered">
                     Resume
                 </h2>
-                <div class="columns is-mobile is-centered mb-6 pb-4">
+                <div class="columns is-mobile is-centered mb-5">
                     <div class="column is-narrow">
                         <a href="/Resume%20Placeholder.pdf" target="_blank" class="link-dark">View</a>
                     </div>
@@ -41,18 +41,17 @@
                     </div>
                 </div>
                 <!-- End Resume title -->
-                <!-- Begin Education Section -->
+                <!-- Begin Education section -->
                 <div class="columns is-vcentered">
                     <div class="column is-auto">
                         <h3 class="title">
                             Education
                         </h3>
-                        <div class="block">
+                        <p class="block">
                             Currently, I'm working towards my Bachelor's of Science in Computer Science at UCF as part
                             of the Burnett Honors College. At UCF, I enjoy an excellent Computer Science program, the
-                            opportunity to attend weekly programming team practices, and of course
-                            a beautiful campus!
-                        </div>
+                            opportunity to attend weekly programming team practices, and of course a beautiful campus!
+                        </p>
                         <div class="block">
                             <p><strong>GPA:</strong> 4.0</p>
                             <p><strong>Anticipated Graduation:</strong> May 2025</p>
@@ -65,26 +64,26 @@
                         <img src="/img/ucf.jpg" class="theme-image tall-image box-hover-shadow" alt="Sunrise over UCF">
                     </div>
                 </div>
-                <!-- End Education Section -->
-                <!-- Begin Skills Section -->
+                <!-- End Education section -->
+                <!-- Begin Skills section -->
                 <div class="columns is-vcentered reverse-row-order mt-6">
                     <div class="column is-auto">
                         <h3 class="title">
                             Skills
                         </h3>
-                        <div class="block">
+                        <p class="block">
                             I've always enjoyed teaching myself new skills that enable me to create projects that
                             challenge me in new ways. Recently, my language of choice for programming projects has been
-                            Python, but I've also been learning some other common languages. Additionally,
-                            I've dabbled in Dart (Flutter) and have started using Git/Github to organize my projects.
-                        </div>
+                            Python, but I've also been learning some other common languages. Additionally, I've dabbled
+                            in Dart (Flutter) and have started using Git/GitHub to organize my projects.
+                        </p>
                         <div class="block">
                             <p><strong>Programming Languages:</strong> Python, C++, C, Java</p>
-                            <p><strong>Technologies & Frameworks:</strong> Git/Github, Flutter, HTML/CSS</p>
+                            <p><strong>Technologies & Frameworks:</strong> Git/GitHub, Flutter, HTML/CSS</p>
                         </div>
                     </div>
                     <div class="column is-0"></div>
-                    <!-- Begin Skills Chart -->
+                    <!-- Begin Skills chart -->
                     <div class="column is-auto background-gradient theme-image box-hover-shadow is-flex is-flex-direction-column is-align-self-stretch is-justify-content-space-between"
                         style="min-height:370px">
                         <div class="columns is-mobile mx-3 mt-3">
@@ -148,13 +147,147 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Skills Chart -->
+                    <!-- End Skills chart -->
                 </div>
-                <!-- End Skills Section -->
+                <!-- End Skills section -->
             </div>
         </div>
     </section>
-    <!-- End Resume Hero -->
+    <!-- End Resume section -->
+    <!-- Begin Projects section -->
+    <section id="projects" class="hero has-text-black-themed py-6">
+        <div class="hero-body">
+            <div class="container is-max-widescreen">
+                <!-- Begin Projects title -->
+                <h2 class="title is-size-1 has-text-white has-text-centered">
+                    Projects
+                </h2>
+                <div class="columns is-mobile is-centered mb-5">
+                    <div class="column is-narrow">
+                        <a href="https://github.com/evoth" target="_blank" class="link-light">GitHub</a>
+                    </div>
+                    <div class="column is-narrow">
+                        <a href="https://play.google.com/store/apps/dev?id=7959708032193882089" target="_blank"
+                            class="link-light">Google Play</a>
+                    </div>
+                </div>
+                <!-- End Projects title -->
+                <!-- Begin project cards -->
+                <div class="columns is-vcentered is-multiline">
+                    <!-- Begin Schema card -->
+                    <div class="column is-one-third is-flex is-align-self-stretch">
+                        <div class="card is-flex is-flex-direction-column theme-image box-hover-shadow">
+                            <div class="card-content" style="flex: 1">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/img/schema-icon.png" alt="Schema Icon">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Schema Notes</p>
+                                        <p class="subtitle is-6">Flutter</p>
+                                    </div>
+                                </div>
+                                <p class="content">
+                                    A clean, customizable, and functional notes app with support for note organization,
+                                    offline use, and real-time syncing across multiple devices.
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/evoth/schema" target="_blank"
+                                    class="card-footer-item">GitHub</a>
+                                <a href="https://schema.ethanvoth.com" target="_blank" class="card-footer-item">Web
+                                    App</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.ethanvoth.schema"
+                                    target="_blank" class="card-footer-item">Play Store</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- End Schema card -->
+                    <!-- Begin Portfolio Site card -->
+                    <div class="column is-one-third is-flex is-align-self-stretch">
+                        <div class="card is-flex is-flex-direction-column theme-image box-hover-shadow">
+                            <div class="card-content" style="flex: 1">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/img/portfolio-site-icon.png" alt="Portfolio Site Icon">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Portfolio Site</p>
+                                        <p class="subtitle is-6">HTML & CSS</p>
+                                    </div>
+                                </div>
+                                <p class="content">
+                                    The home base of my programming portfolio, and a cohesive presentation of my resume
+                                    and various projects. (This website!)
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/evoth/portfolio-site" target="_blank"
+                                    class="card-footer-item">GitHub</a>
+                                <a href="https://ethanvoth.com" target="_blank" class="card-footer-item">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- End Portfolio Site card -->
+                    <!-- Begin Feedback Palette card -->
+                    <div class="column is-one-third is-flex is-align-self-stretch">
+                        <div class="card is-flex is-flex-direction-column theme-image box-hover-shadow">
+                            <div class="card-content" style="flex: 1">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/img/feedback-palette-icon.png" alt="Feedback Palette Icon">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Feedback Palette</p>
+                                        <p class="subtitle is-6">Javascript</p>
+                                    </div>
+                                </div>
+                                <p class="content" style="">
+                                    Get a color palette for a point in an image, courtesy of feedback loops and
+                                    interpolation artifacts!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/evoth/feedback-palette" target="_blank"
+                                    class="card-footer-item">GitHub</a>
+                                <a href="https://palette.ethanvoth.com" target="_blank"
+                                    class="card-footer-item">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- End Feedback Palette card -->
+                </div>
+                <!-- End project cards -->
+            </div>
+        </div>
+    </section>
+    <!-- End Projects section -->
+    <!-- Begin Contact Me section -->
+    <section id="contact-me" class="hero is-white-themed has-text-black-themed is-skewed py-6">
+        <div class="hero-body">
+            <div class="container is-max-widescreen">
+                <!-- Begin Contact Me title -->
+                <h2 class="title is-size-1 has-text-centered mb-5">
+                    Contact Me
+                </h2>
+                <!-- End Contact Me title -->
+                <!-- Begin Contact Me content -->
+                <div class="content block">
+                    If you received an application from me, you can contact me using the information listed there.
+                    Otherwise, you can reach me at my public email address, <a
+                        href="mailto: ethanvoth7@gmail.com">ethanvoth7@gmail.com</a>, or by using the form below.
+                </div>
+                <!-- End Contact Me content -->
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Me section -->
     <!-- Footer (loaded with jQuery) -->
     <div id="footer"></div>
 </body>

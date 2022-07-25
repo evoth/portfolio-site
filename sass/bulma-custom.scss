@@ -7,6 +7,11 @@
 $family-sans-serif: "Poppins", sans-serif;
 $size-1: 60px;
 $primary: rgb(131, 232, 255);
+$card-color: $black-themed;
+$card-background-color: $white-themed;
+$card-shadow: 0 0 0 0 transparent;
+$card-header-shadow: 0 0 0 0 transparent;
+$card-radius: 0px;
 
 // Import necessary Bulma components
 @import "../../node/node_modules/bulma/sass/utilities/_all.sass";
@@ -19,6 +24,9 @@ $primary: rgb(131, 232, 255);
 @import "../../node/node_modules/bulma/sass/elements/container.sass";
 @import "../../node/node_modules/bulma/sass/elements/other.sass";
 @import "../../node/node_modules/bulma/sass/elements/content.sass";
+@import "../../node/node_modules/bulma/sass/components/card.sass";
+@import "../../node/node_modules/bulma/sass/elements/image.sass";
+@import "../../node/node_modules/bulma/sass/components/media.sass";
 
 // Used to show rows in the correct order on mobile (reversed when in column view otherwise)
 @media only screen and (min-width: $tablet) {
@@ -26,4 +34,20 @@ $primary: rgb(131, 232, 255);
         display: flex;
         flex-direction: row-reverse;
     }
+}
+
+// Card customizations
+.card-footer-item {
+    background-color: rgba(128, 128, 128, 0);
+    transition: 0.5s ease;
+}
+
+.card-footer-item:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+    transition: 0.5s ease;
+}
+
+// Media scrollbar fix
+.media-content {
+    overflow: hidden;
 }
