@@ -1,6 +1,6 @@
 // Loads header and footer, then scrolls to the correct anchor if one is given
 // (loading jQuery content on top of scroll position messes it up, hence this approach)
-$(window).on('load', function () {
+$(window).on("load", function () {
     $("#header").load("/includes/header.html", function () {
         // Scrolls to the correct position when loaded
         if (window.location.hash) {

@@ -8,10 +8,17 @@ if (domainParts[domainParts.length - 1] === "com") {
 // Sets a cookie with the given name and value (expires in one year)
 // This cookie is valid for the root domain and all subdomains
 function setCookie(name, value) {
-    const yearFromNow = new Date();
-    yearFromNow.setFullYear(yearFromNow.getFullYear() + 1);
-    let expires = "expires=" + yearFromNow.toUTCString();
+    const expireDate = new Date();
+    expireDate.setFullYear(expireDate.getFullYear() + 1);
+    let expires = "expires=" + expireDate.toUTCString();
     document.cookie = name + "=" + value + "; " + expires + "; path=/; domain=" + domainName + ";";
+}
+
+// Sets a cookie with the given name and value that expires in the given number of minutes
+function setCookieMinutes(name, value, minutes) {
+    const expireDate = new Date((new Date()).getTime() + minutes * 60000);
+    let expires = "expires=" + expireDate.toUTCString();
+    document.cookie = name + "=" + value + "; " + expires + "; path=/;";
 }
 
 // Gets the value for the cookie with the given name, returning "" if not found

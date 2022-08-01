@@ -19,6 +19,8 @@
     <script src="/js/includes.js"></script>
     <script src="/js/cookies.js"></script>
     <script src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/form.js"></script>
 </head>
 
 <body id="body">
@@ -205,6 +207,35 @@
                         </div>
                     </div>
                     <!-- End Schema card -->
+                    <!-- Begin Feedback Palette card -->
+                    <div class="column is-one-third is-flex is-align-self-stretch">
+                        <div class="card is-flex is-flex-direction-column theme-image box-hover-shadow">
+                            <div class="card-content" style="flex: 1">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/img/feedback-palette-icon.png" alt="Feedback Palette Icon">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Feedback Palette</p>
+                                        <p class="subtitle is-6">Javascript</p>
+                                    </div>
+                                </div>
+                                <p class="content">
+                                    Get a color palette for a point in an image, courtesy of feedback loops and
+                                    interpolation artifacts!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/evoth/feedback-palette" target="_blank"
+                                    class="card-footer-item">GitHub</a>
+                                <a href="https://palette.ethanvoth.com" target="_blank"
+                                    class="card-footer-item">Website</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- End Feedback Palette card -->
                     <!-- Begin Portfolio Site card -->
                     <div class="column is-one-third is-flex is-align-self-stretch">
                         <div class="card is-flex is-flex-direction-column theme-image box-hover-shadow">
@@ -233,35 +264,34 @@
                         </div>
                     </div>
                     <!-- End Portfolio Site card -->
-                    <!-- Begin Feedback Palette card -->
+                    <!-- Begin PseudoSun card -->
                     <div class="column is-one-third is-flex is-align-self-stretch">
                         <div class="card is-flex is-flex-direction-column theme-image box-hover-shadow">
                             <div class="card-content" style="flex: 1">
                                 <div class="media">
                                     <div class="media-left">
                                         <figure class="image is-48x48">
-                                            <img src="/img/feedback-palette-icon.png" alt="Feedback Palette Icon">
+                                            <img src="/img/pseudosun-icon.png" alt="PseudoSun Icon">
                                         </figure>
                                     </div>
                                     <div class="media-content">
-                                        <p class="title is-4">Feedback Palette</p>
+                                        <p class="title is-4">PseudoSun</p>
                                         <p class="subtitle is-6">Javascript</p>
                                     </div>
                                 </div>
-                                <p class="content" style="">
-                                    Get a color palette for a point in an image, courtesy of feedback loops and
-                                    interpolation artifacts!
+                                <p class="content">
+                                    A 3D experience that allows you to explore a virtual, procedurally generated world.
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="https://github.com/evoth/feedback-palette" target="_blank"
+                                <a href="https://github.com/evoth/pseudosun" target="_blank"
                                     class="card-footer-item">GitHub</a>
-                                <a href="https://palette.ethanvoth.com" target="_blank"
-                                    class="card-footer-item">Website</a>
+                                <a href="https://pseudosun.ethanvoth.com" target="_blank" class="card-footer-item">Web
+                                    App</a>
                             </footer>
                         </div>
                     </div>
-                    <!-- End Feedback Palette card -->
+                    <!-- End PseudoSun card -->
                 </div>
                 <!-- End project cards -->
             </div>
@@ -277,13 +307,59 @@
                     Contact Me
                 </h2>
                 <!-- End Contact Me title -->
-                <!-- Begin Contact Me content -->
-                <div class="content block">
-                    If you received an application from me, you can contact me using the information listed there.
-                    Otherwise, you can reach me at my public email address, <a
-                        href="mailto: ethanvoth7@gmail.com">ethanvoth7@gmail.com</a>, or by using the form below.
+                <div class="columns">
+                    <!-- Begin Contact Me text -->
+                    <div class="column is-one-third content">
+                        If you received an application from me, you can contact me using the information listed there.
+                        Otherwise, you can reach me at my public email, <a
+                            href="mailto:ethanvoth7@gmail.com">ethanvoth7@gmail.com</a>, or by using the form <span
+                            class="is-hidden-mobile">on the right</span><span class="is-hidden-tablet">below</span>.
+                    </div>
+                    <!-- End Contact Me text -->
+                    <!-- Begin Contact Me form -->
+                    <div class="column is-two-thirds">
+                        <form id="contact-me-form">
+                            <div class="field">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input name="name" class="input" type="text" placeholder="Name"
+                                                maxlength="200" required>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input name="email" class="input" type="email" placeholder="Email"
+                                                maxlength="200" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input name="subject" class="input" type="text" placeholder="Subject"
+                                        maxlength="200" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <textarea name="message" class="textarea has-fixed-size" placeholder="Message"
+                                        rows="8" maxlength="2000" required></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="columns is-flex is-vcentered is-mobile">
+                                    <div class="column is-narrow control">
+                                        <input id="contact-me-form-submit" type="submit" class="button is-primary"
+                                            value="Send message" disabled>
+                                    </div>
+                                    <div id="contact-me-form-help-text" class="column is-auto"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Contact Me form -->
                 </div>
-                <!-- End Contact Me content -->
             </div>
         </div>
     </section>

@@ -141,3 +141,12 @@ html {
     text-shadow: -1px 1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255),
         1px -1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
 }
+
+/* Form validation styling */
+input.is-touched:invalid {
+    @extend .is-danger;
+}
+
+textarea.is-touched:invalid {
+    @extend .is-danger;
+}

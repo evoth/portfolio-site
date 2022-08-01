@@ -6,12 +6,19 @@
 // Update Bulma's global variables
 $family-sans-serif: "Poppins", sans-serif;
 $size-1: 60px;
-$primary: rgb(131, 232, 255);
+$primary: #0091aa;
 $card-color: $black-themed;
 $card-background-color: $white-themed;
 $card-shadow: 0 0 0 0 transparent;
 $card-header-shadow: 0 0 0 0 transparent;
 $card-radius: 0px;
+$radius-small: 6px;
+$radius: 10px;
+$radius-large: 14px;
+$control-radius: $radius;
+$input-disabled-background-color: $input-background-color;
+$input-disabled-border-color: transparent;
+$input-disabled-placeholder-color: $input-placeholder-color;
 
 // Import necessary Bulma components
 @import "../../node/node_modules/bulma/sass/utilities/_all.sass";
@@ -27,6 +34,8 @@ $card-radius: 0px;
 @import "../../node/node_modules/bulma/sass/components/card.sass";
 @import "../../node/node_modules/bulma/sass/elements/image.sass";
 @import "../../node/node_modules/bulma/sass/components/media.sass";
+@import "../../node/node_modules/bulma/sass/form/_all.sass";
+@import "../../node/node_modules/bulma/sass/elements/button.sass";
 
 // Used to show rows in the correct order on mobile (reversed when in column view otherwise)
 @media only screen and (min-width: $tablet) {

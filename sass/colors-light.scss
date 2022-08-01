@@ -8,6 +8,12 @@ $link: rgb(67, 95, 217);
 $link-hover: darken($link, 20%);
 $border-light: darken($white-themed, 10%);
 $subtitle-color: lighten($black-themed, 40%);
+$input-background-color: darken($white-themed, 5%);
+$input-border-color: darken($white-themed, 30%);
+$input-hover-border-color: lighten($black-themed, 50%);
+$input-focus-border-color: $link-hover;
+$input-placeholder-color: lighten($black-themed, 60%);
+$input-disabled-color: lighten($black-themed, 50%);
 $custom-colors: (
     "white-themed": ($white-themed, $white-themed-invert),
     "black-themed": ($black-themed, $black-themed-invert),
