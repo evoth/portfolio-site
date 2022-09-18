@@ -82,8 +82,12 @@ html {
 }
 
 /* Huge title text */
-.title.is-size-0 {
+.title.is-title-text {
     font-size: 100px;
+}
+
+.title.is-title-text-mobile {
+    font-size: 80px;
 }
 
 /* Subtle text shadow on mouse hover */
@@ -99,6 +103,7 @@ html {
 /* Subtle box shadow on mouse hover */
 .box-hover-shadow {
     transition: box-shadow .5s ease, transform .5s ease;
+    transform: translate(0px, 0px);
 }
 
 .box-hover-shadow:hover {
