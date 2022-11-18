@@ -10,6 +10,7 @@ const blankFieldsMessage = function (blankFieldNames) {
     return `Please fill out the ${blankFieldsText} field${blankFieldNames.length == 1 ? "" : "s"}.`;
 }
 const successMessage = "Thank you for reaching out. I look forward to receiving your message!";
+const sendButtonDisabledTitle = "Please fill out all fields";
 
 // Initializes EmailJS service
 (function () {
@@ -22,6 +23,9 @@ window.onload = function () {
     const submitButton = document.getElementById("contact-me-form-submit");
     const helpText = document.getElementById("contact-me-form-help-text");
     let submitted = false;
+
+    submitButton.setAttribute("disabled", "");
+    submitButton.setAttribute("title", sendButtonDisabledTitle);
 
     // Checks the form whenever we update any of the text or switch focus between fields
     form.querySelectorAll("input, textarea").forEach((e) => {
@@ -108,8 +112,10 @@ window.onload = function () {
         submitButton.setAttribute("value", "Send message");
         if (isFormValid) {
             submitButton.removeAttribute("disabled");
+            submitButton.removeAttribute("title");
         } else {
             submitButton.setAttribute("disabled", "");
+            submitButton.setAttribute("title", sendButtonDisabledTitle);
         }
     }
 
