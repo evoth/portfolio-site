@@ -1,20 +1,21 @@
-$text-strong: white;
+$text-strong: darken(white, 5%);
+;
 $white-themed: rgb(31, 31, 31);
 $white-themed-invert: findColorInvert($white-themed);
-$black-themed: white;
+$black-themed: darken(white, 13%);
 $black-themed-invert: findColorInvert($black-themed);
 $link-dark-color: rgb(168, 168, 168);
 $link-dark-hover-color: rgb(255, 255, 255);
 $link: rgb(121, 150, 253);
 $link-hover: lighten($link, 20%);
 $border-light: lighten($white-themed, 10%);
-$subtitle-color: darken($black-themed, 40%);
+$subtitle-color: darken($black-themed, 20%);
 $input-background-color: lighten($white-themed, 5%);
 $input-border-color: lighten($white-themed, 30%);
-$input-hover-border-color: darken($black-themed, 30%);
+$input-hover-border-color: darken($black-themed, 15%);
 $input-focus-border-color: $link-hover;
-$input-placeholder-color: darken($black-themed, 40%);
-$input-disabled-color: darken($black-themed, 30%);
+$input-placeholder-color: darken($black-themed, 20%);
+$input-disabled-color: darken($black-themed, 15%);
 $custom-colors: (
     "white-themed": ($white-themed, $white-themed-invert),
     "black-themed": ($black-themed, $black-themed-invert),
