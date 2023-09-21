@@ -1,10 +1,10 @@
 # Portfolio Site
 
-The home base of my programming portfolio, and a cohesive presentation of my resume and various projects.
+The (old) home base of my programming portfolio, and a cohesive presentation of my resume and various projects.
 
 ## Website
 
-See it in action at https://ethanvoth.com!
+See it in action at https://v1.ethanvoth.com!
 
 ## Theme
 
